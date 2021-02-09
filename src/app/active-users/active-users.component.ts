@@ -11,7 +11,7 @@ export class ActiveUsersComponent implements OnInit {
   users: string[];
   counter: number;
 
-  constructor(private usersService:UsersService, protected counterService: CounterService) { }
+  constructor(private usersService:UsersService, private counterService: CounterService) { }
 
   ngOnInit(): void {
     this.users = this.usersService.activeUsers;
